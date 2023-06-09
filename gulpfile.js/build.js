@@ -798,7 +798,7 @@ exports.collectStatics = collectStatics;
 exports.whoAmI = whoAmI;
 exports.buildPixiFunctions = buildPixiFunctions;
 exports.buildFinalize = gulp.series(
-  gulp.parallel(collectStatics, persistBuildInfo),
+  gulp.parallel(collectStatics),
   thumborImageIndex
 );
 
